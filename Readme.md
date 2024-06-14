@@ -60,8 +60,9 @@ uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
 - You can see following logs in the terminal:
   - INFO:     Waiting for application startup -> Once this is received, ensures ingestion process is started.
   - INFO:     Application startup complete -> Once this is received, ensures ingestion process is completed and application is started successfully.
+<br><br>
 
-![Alt text](static/server.png?raw=true "weather")
+![Alt text](static/application-start.png?raw=true "application start")
 
 #### This step will take few minutes as it will dump the data in the initial setup.
 
@@ -95,18 +96,36 @@ pytest
 ```bash
 pytest --cov
 ```
-
-![Alt text](static/pytestcov.png?raw=true "weather")
+<br><br>
+![Alt text](static/tests.png?raw=true "testing")
 
 # Screenshots of Postman Collection
 
-![Alt text](static/postman1.png?raw=true "weather")
-
+![Alt text](static/weather-all.png?raw=true "weather records all")
 <br><br>
-![Alt text](static/postman2.png?raw=true "weather")
-
+![Alt text](static/weather-date.png?raw=true "weather records date")
 <br><br>
-![Alt text](static/swagger2.png?raw=true "weather")
+![Alt text](static/weather-station.png?raw=true "weather records station")
+<br><br>
+![Alt text](static/weather-page-limit.png?raw=true "weather records page limit")
+<br><br>
+![Alt text](static/weather-stats-all.png?raw=true "weather stats records all")
+<br><br>
+![Alt text](static/weather-stats-year.png?raw=true "weather stats records date")
+<br><br>
+![Alt text](static/weather-stats-station.png?raw=true "weather stats records station")
+<br><br>
+![Alt text](static/weather-stats-page-limit.png?raw=true "weather stats records page limit")
+
+# Screenshots of Swagger API Collection
+
+![Alt text](static/swagger-1-1.png?raw=true "swagger api weather records")
+<br><br>
+![Alt text](static/swagger-1-2.png?raw=true "swagger api weather records")
+<br><br>
+![Alt text](static/swagger-2-1.png?raw=true "swagger api weather stats")
+<br><br>
+![Alt text](static/swagger-2-2.png?raw=true "swagger api weather stats")
 
 # AWS Deployment Approach
 # Deploying FastAPI API on AWS
