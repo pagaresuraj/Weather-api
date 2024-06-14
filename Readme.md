@@ -77,8 +77,6 @@ uvicorn src.app:app --reload --host 0.0.0.0 --port 8000
   http://127.0.0.1:8000/api/weather/
   http://127.0.0.1:8000/api/weather/stats/
 
-- Using query parameters it can be accessed such as:
-  http://127.0.0.1:8000/api/weather/?date=20100101
   
 ```
 # Troubleshoot to application startup if any: Kill port if port already in use:
